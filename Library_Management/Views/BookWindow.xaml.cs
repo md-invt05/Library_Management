@@ -34,9 +34,9 @@ public partial class BookWindow : Window
 
     private void SaveButton_Click(object sender, RoutedEventArgs e)
     {
-        if (string.IsNullOrEmpty(TitleTextBox.Text) ||
+        if (string.IsNullOrWhiteSpace(TitleTextBox.Text) ||
             !int.TryParse(PublishYearTextBox.Text, out int publishYear) ||
-            string.IsNullOrEmpty(ISBNTextBox.Text) ||
+            string.IsNullOrWhiteSpace(ISBNTextBox.Text) ||
             !int.TryParse(QuantityTextBox.Text, out int quantity) ||
             AuthorComboBox.SelectedValue == null ||
             GenreComboBox.SelectedValue == null)
