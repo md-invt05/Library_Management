@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library_Management", "Library_Management.csproj", "{77F9EFC9-9C5C-49A5-A4C8-DCAD50DC8286}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library_Management", "Library_Management\Library_Management.csproj", "{77F9EFC9-9C5C-49A5-A4C8-DCAD50DC8286}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
