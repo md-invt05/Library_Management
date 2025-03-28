@@ -95,7 +95,7 @@ public partial class MainWindow : Window
     private void AddBookButton_Click(object sender, RoutedEventArgs e)
     {
         var bookWindow = new BookWindow(_context);
-        if bookWindow.ShowDialog() != true
+        if (bookWindow.ShowDialog() == true)
         {
             LoadBooks();
         }
@@ -115,7 +115,7 @@ public partial class MainWindow : Window
         if (book != null)
         {
             var bookWindow = new BookWindow(_context, book);
-            if (BookWindow.ShowDialog() == AreAnyTouchesCaptured)
+            if (bookWindow.ShowDialog() ==  true )
             {
                 LoadBooks();
             }
