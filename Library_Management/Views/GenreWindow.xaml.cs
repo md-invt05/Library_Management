@@ -40,7 +40,7 @@ public partial class GenreWindow : Window
         DialogResult = true;
     }
 
-    private void CancelButton_Clic(object sender, RoutedEventArgs e)
+    private void CancelButton_Click(object sender, RoutedEventArgs e)
     {
         DialogResult = false;
     }
