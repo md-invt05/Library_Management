@@ -17,7 +17,7 @@
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
                 <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" Width="*"/>
                 <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" Width="*"/>
-                <DataGridTextColumn Header="Birth Date" Binding="{Binding BirthDate}" Width="*"/>
+                <DataGridTextColumn Header="Birth Date" Binding="{Binding DateBirth}" Width="*"/>
                 <DataGridTextColumn Header="Country" Binding="{Binding Country}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>

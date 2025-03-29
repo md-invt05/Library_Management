@@ -53,7 +53,9 @@ public class LibraryDbContext : DbContext
             entity.HasKey(a => a.Id);
             entity.Property(a => a.FirstName).IsRequired().HasMaxLength(100);
             entity.Property(a => a.LastName).IsRequired().HasMaxLength(100);
-            entity.Property(a => a.DateBirth).IsRequired();
+            entity.Property(a => a.DateBirth)
+                .HasColumnType("timestamp without time zone")
+                .IsRequired();
             entity.Property(a => a.Country).IsRequired().HasMaxLength(100);
         });
 

@@ -18,7 +18,7 @@ public partial class GenreManagementWindow : Window
 
     public void LoadGenres()
     {
-        var genres = _context.Genres.ToList();
+        GenresDataGrid.ItemsSource = _context.Genres.ToList();
     }
 
     private void AddButton_Click(object sender, RoutedEventArgs e)

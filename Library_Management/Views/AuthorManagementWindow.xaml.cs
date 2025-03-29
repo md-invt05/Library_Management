@@ -14,6 +14,7 @@ public partial class AuthorManagementWindow : Window
     {
         InitializeComponent();
         _context = context;
+        loadAuthors();
     }
 
     private void loadAuthors()
